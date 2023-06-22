@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="Stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg {
+        background-image: url("mountains.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0%;
+      }
+
+      .carousel-caption-box {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://hunterchalets.com/wp-content/uploads/2021/12/morzine-drone-hunter-chalets-image.jpg"
+            alt="Morzine"
+          />
+          <div class="carousel-caption-box">
+            <h4>Plan your perfect winter holiday with us</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/33/60/Copyright-Tourist-_3360896a.jpg?imwidth=680"
+            alt="St Anton"
+          />
+          <div class="carousel-caption-box">
+            <h4>Snow-sure european ski resorts with something for everyone</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.alpineanswers.co.uk/media/W1siZiIsIjIwMTMvMDgvMDgvMTRfMTVfMzBfMzQxX1BsYWduZUNlbnRyZTguanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDgwMCIsIi1xdWFsaXR5IDgwIl1d/64ab5101c50e5286/PlagneCentre8.jpg"
+            alt="La Plagne"
+          />
+          <div class="carousel-caption-box">
+            <h4>Book with us for seamless travel planning</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.telegraph.co.uk/content/dam/Travel/ski/Resorts/cervinia-resort-Niccol%C3%B2-Venturin.jpg"
+            alt="Cervinia"
+          />
+          <div class="carousel-caption-box">
+            <h4>Get away to the mountains this coming winter!</h4>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Morzine, France</h4>
+          <img
+            src="https://hunterchalets.com/wp-content/uploads/2021/12/morzine-drone-hunter-chalets-image.jpg"
+            alt="Morzine"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Part of the Portes du Soleil ski area with over 650 kilometres of
+            skiable area spread across 12 resorts in France and Switzerland,
+            Morzine is a great option for all levels of ability. It has a
+            picturesque town centre with plenty of restaurants and lively bars
+            but also many activities for families and non-skiers. A 90-minute
+            journey from Geneva airport makes this a perfect destination for
+            shorter breaks.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>St. Anton am Arlberg, Austria</h4>
+          <img
+            src="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/33/60/Copyright-Tourist-_3360896a.jpg?imwidth=680"
+            alt="St Anton"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Known for its extremely vibrant Apres-Ski scene, chocolate box style
+            village centre and advanced ski terrain, St Anton is the perfect
+            pick for those wanting a challenge on the slopes followed by a night
+            out in one of the town's many lively bars or clubs. The skiable area
+            is large with real gems to be found off-piste for those feeling
+            adventurous.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>La Plagne, France</h4>
+          <img
+            src="https://www.alpineanswers.co.uk/media/W1siZiIsIjIwMTMvMDgvMDgvMTRfMTVfMzBfMzQxX1BsYWduZUNlbnRyZTguanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDgwMCIsIi1xdWFsaXR5IDgwIl1d/64ab5101c50e5286/PlagneCentre8.jpg"
+            alt="La Plagne"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Perfect for families with lots of terrain to suit all abilities and
+            many choices for accommodation across the resort. Linked with Les
+            Arcs as part of the larger Paradiski area, there is plenty to keep
+            the entire group entertained.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Cervinia, Italy</h4>
+          <img
+            src="https://www.telegraph.co.uk/content/dam/Travel/ski/Resorts/cervinia-resort-Niccol%C3%B2-Venturin.jpg"
+            alt="Cervinia"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            The highest resort in Italy at 2000 metres, Cervinia boasts
+            snow-sure skiing with access to neighboring Zermatt and views of the
+            Matterhorn mountain. Excellent local restaurants mean some great
+            food options for all tastes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
