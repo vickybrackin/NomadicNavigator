@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Winter Destinations</title>
     <link rel="Stylesheet" href="main.css" />
     <link
       rel="stylesheet"
@@ -18,6 +19,18 @@
         height: 100%;
         margin: 0;
         padding: 0;
+      }
+
+      .col-lg-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .col-lg-6 h4 {
+        margin-bottom: 40px;
       }
 
       .bg {
@@ -47,11 +60,85 @@
         top: 0;
         left: 0;
         width: 100%;
-        text-align: center;
+        text-align: right;
+      }
+      .carousel-caption-box a {
+        margin-right: 10px;
+        font-size: 20px;
+        color: azure;
+        text-decoration: none;
+        padding-right: 20px;
+        position: relative;
+        z-index: 10;
+      }
+      .carousel-caption-box a:hover {
+        text-decoration: underline;
+      }
+      .code-container {
+        float: left;
+        width: 33.33%;
+        margin-right: 20px;
+        position: absolute;
+        top: 3%;
+        left: 5%;
+        z-index: 999;
+      }
+
+      .code-container .input-group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .code-container .input-group .form-control {
+        text-align: left;
       }
     </style>
   </head>
   <body>
+    <div class="code-container">
+      <div id="emailForm">
+        <form id="emailSubmitForm">
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="Email address"
+              aria-label="Email address"
+              aria-describedby="basic-addon2"
+              required
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">
+                Request Information
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="additionalField" style="display: none">
+        <form id="additionalFieldForm">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="additionalInput"
+              placeholder="Country"
+              aria-label="Country"
+              aria-describedby="basic-addon2"
+              required
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary" id="requestInfoBtn" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="bg"></div>
     <div
       id="carouselExampleIndicators"
@@ -84,7 +171,10 @@
             alt="Morzine"
           />
           <div class="carousel-caption-box">
-            <h4>Plan your perfect winter holiday with us</h4>
+            <a href="index.html">Home</a>
+            <a href="Citybreak.html">City</a>
+            <a href="summerdestinations.html">Summer</a>
+            <a href="Hiking.html">Hike</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -92,8 +182,12 @@
             src="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/33/60/Copyright-Tourist-_3360896a.jpg?imwidth=680"
             alt="St Anton"
           />
+
           <div class="carousel-caption-box">
-            <h4>Snow-sure european ski resorts with something for everyone</h4>
+            <a href="index.html">Home</a>
+            <a href="Citybreak.html">City</a>
+            <a href="summerdestinations.html">Summer</a>
+            <a href="Hiking.html">Hike</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -101,8 +195,12 @@
             src="https://www.alpineanswers.co.uk/media/W1siZiIsIjIwMTMvMDgvMDgvMTRfMTVfMzBfMzQxX1BsYWduZUNlbnRyZTguanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDgwMCIsIi1xdWFsaXR5IDgwIl1d/64ab5101c50e5286/PlagneCentre8.jpg"
             alt="La Plagne"
           />
+
           <div class="carousel-caption-box">
-            <h4>Book with us for seamless travel planning</h4>
+            <a href="index.html">Home</a>
+            <a href="Citybreak.html">City</a>
+            <a href="summerdestinations.html">Summer</a>
+            <a href="Hiking.html">Hike</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -110,8 +208,12 @@
             src="https://www.telegraph.co.uk/content/dam/Travel/ski/Resorts/cervinia-resort-Niccol%C3%B2-Venturin.jpg"
             alt="Cervinia"
           />
+
           <div class="carousel-caption-box">
-            <h4>Get away to the mountains this coming winter!</h4>
+            <a href="index.html">Home</a>
+            <a href="Citybreak.html">City</a>
+            <a href="summerdestinations.html">Summer</a>
+            <a href="Hiking.html">Hike</a>
           </div>
         </div>
       </div>
@@ -138,20 +240,11 @@
     <br />
     <br />
     <br />
-
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
+      <div class="row">
+        <div class="col-lg-6">
           <h4>Morzine, France</h4>
-          <img
-            src="https://hunterchalets.com/wp-content/uploads/2021/12/morzine-drone-hunter-chalets-image.jpg"
-            alt="Morzine"
-            width="300"
-            height="300"
-          />
-        </div>
-        <div class="col">
-          <p class="d-flex align-items-center justify-content-center">
+          <p>
             Part of the Portes du Soleil ski area with over 650 kilometres of
             skiable area spread across 12 resorts in France and Switzerland,
             Morzine is a great option for all levels of ability. It has a
@@ -161,14 +254,24 @@
             shorter breaks.
           </p>
         </div>
+        <div class="col-lg-6">
+          <img
+            src="https://hunterchalets.com/wp-content/uploads/2021/12/morzine-drone-hunter-chalets-image.jpg"
+            alt="Morzine"
+            width="300"
+            height="300"
+          />
+        </div>
       </div>
+    </div>
 
-      <br />
-      <br />
-      <br />
+    <br />
+    <br />
+    <br />
 
-      <div class="row align-items-center">
-        <div class="col">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-last">
           <h4>St. Anton am Arlberg, Austria</h4>
           <img
             src="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/33/60/Copyright-Tourist-_3360896a.jpg?imwidth=680"
@@ -177,8 +280,8 @@
             height="300"
           />
         </div>
-        <div class="col">
-          <p class="d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 order-lg-last">
+          <p>
             Known for its extremely vibrant Apres-Ski scene, chocolate box style
             village centre and advanced ski terrain, St Anton is the perfect
             pick for those wanting a challenge on the slopes followed by a night
@@ -188,13 +291,23 @@
           </p>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
+    </div>
+    <br />
+    <br />
+    <br />
 
-      <div class="row align-items-center">
-        <div class="col">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
           <h4>La Plagne, France</h4>
+          <p>
+            Perfect for families with lots of terrain to suit all abilities and
+            many choices for accommodation across the resort. Linked with Les
+            Arcs as part of the larger Paradiski area, there is plenty to keep
+            the entire group entertained.
+          </p>
+        </div>
+        <div class="col-lg-6">
           <img
             src="https://www.alpineanswers.co.uk/media/W1siZiIsIjIwMTMvMDgvMDgvMTRfMTVfMzBfMzQxX1BsYWduZUNlbnRyZTguanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDgwMCIsIi1xdWFsaXR5IDgwIl1d/64ab5101c50e5286/PlagneCentre8.jpg"
             alt="La Plagne"
@@ -202,22 +315,16 @@
             height="300"
           />
         </div>
-        <div class="col">
-          <p class="d-flex align-items-center justify-content-center">
-            Perfect for families with lots of terrain to suit all abilities and
-            many choices for accommodation across the resort. Linked with Les
-            Arcs as part of the larger Paradiski area, there is plenty to keep
-            the entire group entertained.
-          </p>
-        </div>
       </div>
+    </div>
 
-      <br />
-      <br />
-      <br />
+    <br />
+    <br />
+    <br />
 
-      <div class="row align-items-center">
-        <div class="col">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-last">
           <h4>Cervinia, Italy</h4>
           <img
             src="https://www.telegraph.co.uk/content/dam/Travel/ski/Resorts/cervinia-resort-Niccol%C3%B2-Venturin.jpg"
@@ -226,8 +333,8 @@
             height="300"
           />
         </div>
-        <div class="col">
-          <p class="d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 order-lg-last">
+          <p>
             The highest resort in Italy at 2000 metres, Cervinia boasts
             snow-sure skiing with access to neighboring Zermatt and views of the
             Matterhorn mountain. Excellent local restaurants mean some great
@@ -237,20 +344,60 @@
       </div>
     </div>
 
+    <br />
+    <br />
+    <br />
+    <br />
+
     <footer>
       <p>&copy; 2023. All rights reserved.</p>
     </footer>
-    <button
-      id="requestInfoBtn"
-      style="position: absolute; top: 90%; left: 45%; z-index: 999"
-    >
-      Request Info
-    </button>
+
+    <script>
+      document
+        .getElementById("emailSubmitForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          document.getElementById("emailForm").style.display = "none";
+          document.getElementById("additionalField").style.display = "block";
+        });
+
+      document
+        .getElementById("additionalFieldForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          requestInfo();
+        });
+
+      function requestInfo() {
+        let countryInput = document.getElementById("additionalInput").value;
+        let country = countryInput.toLowerCase().trim();
+
+        if (
+          country === "england" ||
+          country === "united kingdom" ||
+          country === "wales" ||
+          country === "scotland" ||
+          country === "great britain" ||
+          country === "britain" ||
+          country === "gb" ||
+          country === "uk"
+        ) {
+          alert(
+            "You should shortly receive information from our UK based team"
+          );
+        } else {
+          alert("Our international team will be in touch shortly!");
+        }
+      }
+
+      let infoButton = document.getElementById("requestInfoBtn");
+      infoButton.addEventListener("click", requestInfo);
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
