@@ -1,39 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Landing.css" />
-    <title>Choose your next adventure...</title>
+    <link rel="Stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg {
+        background-image: url("mountains.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0%;
+      }
+
+      .carousel-caption-box {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="split-container">
-      <div class="split-column">
-        <img src="beach.jpg" alt="Beach" />
-        <div class="link">
-          <a href="summerdestinations.html">Sun</a>
+    <div class="bg"></div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.destination2.co.uk/hotels/superid/365074/overview.jpg"
+            alt="Jamaica"
+          />
+          <div class="carousel-caption-box">
+            <h4>Plan your perfect summer holiday with us</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://oceandrive.com/get/files/image/galleries/miami-facts-GettyImages-1202852911.jpg"
+            alt="Miami"
+          />
+          <div class="carousel-caption-box">
+            <h4>Sandy beach resort in the Caribbean sun</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/1c/44/aa/65/now-larimar-punta-cana.jpg"
+            alt="Dominican Republic"
+          />
+          <div class="carousel-caption-box">
+            <h4>Book with us for seamless travel planning</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://thelatch.com.au/wp-content/uploads/2020/09/maldives-1.jpg"
+            alt="The maldives"
+          />
+          <div class="carousel-caption-box">
+            <h4>discover the magical islands of the maldives in South Asia</h4>
+          </div>
         </div>
       </div>
-      <div class="split-column">
-        <img src="Hike.jpg" alt="Hiking" />
-        <div class="link">
-          <a href="Hiking.html">Hike</a>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Montego Bay, Jamaica</h4>
+          <img
+            src="https://images.destination2.co.uk/hotels/superid/365074/overview.jpg"
+            alt="Montego Bay"
+            width="300"
+            height="300"
+          />
         </div>
-      </div>
-      <div class="split-column">
-        <img src="london.jpg" alt="City" />
-        <div class="link">
-          <a href="Citybreak.html">City</a>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Jamaica's most energetic city with a great tropical climate.
+            Whether you want to swept away in the rocking nightlife or looking
+            to relax on a perfect white sandy beach, there's fun for everyone.
+            Montego Bay has an amazing melting pots of culture, buzzing with local
+            authentic food, pristine beaches and diverse range of accommodation.
+          </p>
         </div>
       </div>
 
-      <div class="split-column">
-        <img src="Ski.jpg" alt="Ski" />
-        <div class="link">
-          <a href="winterpage.html">Snow</a>
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Miami</h4>
+          <img
+            src="https://oceandrive.com/get/files/image/galleries/miami-facts-GettyImages-1202852911.jpg"
+            alt="Miami"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Miami offers vibrant mix of sun, sand and culture from its stunning beaches
+            and turquoise waters to its buzzing nightlife and diverse cuisine,
+            Miami has something for everyone. Explore the Iconic Art Deco District,
+            indulge in watersports, or simply relax under the warm Florida sun.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Punta Cana, Dominican Republic</h4>
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/1c/44/aa/65/now-larimar-punta-cana.jpg"
+            alt="Punta Cana"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Enjoy the tropical of Punta Cana with pristine white-sand beaches and 
+            luxurious resorts. Indulge in water sports, explore coral reefs, or 
+            simply unwind under swaying palm trees. Experience vibrant nightlife,
+            delicious cuisine, and bask in the sun. Punta Cana offers the perfect
+            blend of relaxtion and adventure.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>The Maldives</h4>
+          <img
+            src="https://thelatch.com.au/wp-content/uploads/2020/09/maldives-1.jpg"
+            alt="The Maldives"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col">
+          <p class="d-flex align-items-center justify-content-center">
+            Experience paradise in the Maldives with luxurious resorts and picturesque 
+            beaches. Snorkel among vibrant coral reefs, indulge in sumptuous seafood,
+            and unwind with breathtaking sunsets. Immerse yourself in pure bliss,
+            where relaxtion meets adventure. A tropical getaway like no other awaits 
+            you in this idyllic Ocean destination.
+          </p>
         </div>
       </div>
     </div>
+
+    <footer>
+      <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
